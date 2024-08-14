@@ -4,6 +4,6 @@ module a (
 );
 
 assign x = a ^ b ^ c;
-assign x = (a & b) | (b & c) | (a & c);    
+assign y = (a & b) | (b & c) | (a & c);    
 
 endmodule
