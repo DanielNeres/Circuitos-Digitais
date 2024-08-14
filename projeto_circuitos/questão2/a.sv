@@ -1,5 +1,5 @@
 module a (
-    input a, b, c, d,
+    input a, b, c,
     output x
 );
 
