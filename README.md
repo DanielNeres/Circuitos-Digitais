@@ -13,11 +13,75 @@ O projeto está dividido em pastas, onde cada problema corresponde a uma pasta s
 ### 1. Operadores Lógicos
 
 Descrevemos os seguintes circuitos com expressões lógicas de saída em SystemVerilog:
-- 𝑥 = 𝐴𝐵 + 𝐶
-- 𝑥 = (𝐴 + 𝐵)(𝐵 + 𝐶)
-- 𝑥 = 𝐴𝐵(𝐶 + 𝐷)
-- 𝑥 = 𝐴 ⊕ 𝐵 ⊕ 𝐶
-- 𝑦 = 𝐴𝐵 + 𝐵𝐶 + 𝐴𝐶
+
+- A) x = ~a & b | c
+- B) x = (a | b) & (b | ~c)
+- C) x = ~((a & b) & (c | d))
+- D) x =  a ^ b ^ c
+- y = (a & b) | (b & c) | (a & c)
+
+### Tabela Verdade para \( x = AB + C \)
+
+| A  | B  | C  | \( x = AB + C \) |
+|----|----|----|------------------|
+| 0  | 0  | 0  |        0         |
+| 0  | 0  | 1  |        1         |
+| 0  | 1  | 0  |        0         |
+| 0  | 1  | 1  |        1         |
+| 1  | 0  | 0  |        0         |
+| 1  | 0  | 1  |        1         |
+| 1  | 1  | 0  |        1         |
+| 1  | 1  | 1  |        1         |
+
+
+### Tabela Verdade para \( x = (A + B)(B + C) \)
+
+| A  | B  | C  | \( x = (A + B)(B + C) \) |
+|----|----|----|--------------------------|
+| 0  | 0  | 0  |            0             |
+| 0  | 0  | 1  |            0             |
+| 0  | 1  | 0  |            1             |
+| 0  | 1  | 1  |            1             |
+| 1  | 0  | 0  |            0             |
+| 1  | 0  | 1  |            1             |
+| 1  | 1  | 0  |            1             |
+| 1  | 1  | 1  |            1             |
+
+
+### Tabela Verdade para \( x = AB(C + D) \)
+
+| A  | B  | C  | D  | \( x = AB(C + D) \) |
+|----|----|----|----|---------------------|
+| 0  | 0  | 0  | 0  |         0           |
+| 0  | 0  | 0  | 1  |         0           |
+| 0  | 0  | 1  | 0  |         0           |
+| 0  | 0  | 1  | 1  |         0           |
+| 0  | 1  | 0  | 0  |         0           |
+| 0  | 1  | 0  | 1  |         0           |
+| 0  | 1  | 1  | 0  |         0           |
+| 0  | 1  | 1  | 1  |         0           |
+| 1  | 0  | 0  | 0  |         0           |
+| 1  | 0  | 0  | 1  |         0           |
+| 1  | 0  | 1  | 0  |         0           |
+| 1  | 0  | 1  | 1  |         0           |
+| 1  | 1  | 0  | 0  |         0           |
+| 1  | 1  | 0  | 1  |         1           |
+| 1  | 1  | 1  | 0  |         1           |
+| 1  | 1  | 1  | 1  |         1           |
+
+### Tabela Verdade para \( x = A \oplus B \oplus C \) e \( y = AB + BC + AC \)
+
+| A  | B  | C  | \( x = A \oplus B \oplus C \) | \( y = AB + BC + AC \) |
+|----|----|----|------------------------------|------------------------|
+| 0  | 0  | 0  |             0                |           0            |
+| 0  | 0  | 1  |             1                |           0            |
+| 0  | 1  | 0  |             1                |           0            |
+| 0  | 1  | 1  |             0                |           1            |
+| 1  | 0  | 0  |             1                |           0            |
+| 1  | 0  | 1  |             0                |           1            |
+| 1  | 1  | 0  |             0                |           1            |
+| 1  | 1  | 1  |             1                |           1            |
+
 
 Simulação: Todas as combinações de entrada foram simuladas no ModelSim, e a tabela da verdade foi gerada para cada circuito.
 
