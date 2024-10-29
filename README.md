@@ -33,6 +33,10 @@ Descrevemos os seguintes circuitos com expressões lógicas de saída em SystemV
 | 1  | 1  | 0  |        1         |
 | 1  | 1  | 1  |        1         |
 
+### Wave
+
+[![Captura-de-tela-2024-08-26-211219.png](https://i.postimg.cc/6qfKHYGS/Captura-de-tela-2024-08-26-211219.png)](https://postimg.cc/jn2B26cQ)
+
 
 ### Tabela Verdade para \( x = (A + B)(B + C) \)
 
@@ -46,6 +50,10 @@ Descrevemos os seguintes circuitos com expressões lógicas de saída em SystemV
 | 1  | 0  | 1  |            1             |
 | 1  | 1  | 0  |            1             |
 | 1  | 1  | 1  |            1             |
+
+### Wave
+
+[![Captura-de-tela-2024-08-26-211248.png](https://i.postimg.cc/VkLfhQgF/Captura-de-tela-2024-08-26-211248.png)](https://postimg.cc/1f21gdLg)
 
 
 ### Tabela Verdade para \( x = AB(C + D) \)
@@ -69,6 +77,10 @@ Descrevemos os seguintes circuitos com expressões lógicas de saída em SystemV
 | 1  | 1  | 1  | 0  |         1           |
 | 1  | 1  | 1  | 1  |         1           |
 
+### Wave
+
+[![Captura-de-tela-2024-08-26-211324.png](https://i.postimg.cc/SNcY4hWF/Captura-de-tela-2024-08-26-211324.png)](https://postimg.cc/qzMvcWbj)
+
 ### Tabela Verdade para \( x = A \oplus B \oplus C \) e \( y = AB + BC + AC \)
 
 | A  | B  | C  | \( x = A \oplus B \oplus C \) | \( y = AB + BC + AC \) |
@@ -81,6 +93,11 @@ Descrevemos os seguintes circuitos com expressões lógicas de saída em SystemV
 | 1  | 0  | 1  |             0                |           1            |
 | 1  | 1  | 0  |             0                |           1            |
 | 1  | 1  | 1  |             1                |           1            |
+
+### Wave
+
+[![Captura-de-tela-2024-08-26-211345.png](https://i.postimg.cc/5tsxJP7M/Captura-de-tela-2024-08-26-211345.png)](https://postimg.cc/JyBwcQCT)
+
 
 
 Simulação: Todas as combinações de entrada foram simuladas no ModelSim, e a tabela da verdade foi gerada para cada circuito.
@@ -105,6 +122,11 @@ Simulação: Todas as combinações de entrada foram simuladas no ModelSim, e a 
 | 1  | 1  | 0  |  1  |
 | 1  | 1  | 1  |  1  |
 
+### Wave
+
+[![Captura-de-tela-2024-08-26-211410.png](https://i.postimg.cc/RVtVtLFc/Captura-de-tela-2024-08-26-211410.png)](https://postimg.cc/VdY8QMX6)
+
+
 
 | A  | B  | C  | D  | X   |
 |----|----|----|----|-----|
@@ -126,11 +148,20 @@ Simulação: Todas as combinações de entrada foram simuladas no ModelSim, e a 
 | 1  | 1  | 1  | 1  |  1  |
 
 
+### Wave
+
+[![Captura-de-tela-2024-08-26-211520.png](https://i.postimg.cc/NMPf6Nmx/Captura-de-tela-2024-08-26-211520.png)](https://postimg.cc/Q913sJ6B)
+
+
 ### 3. Tabela da Verdade Personalizada
 
 #### Expreções Algebricas Booleanas
 
-- x = (a´ + b´)(a + b´ + d´)(a + b´ + d´);  
+- x = (a´ + b´)(a + b´ + d´)(a + b´ + d´);
+
+### Wave
+
+[![Captura-de-tela-2024-08-26-211542.png](https://i.postimg.cc/prpr3NR7/Captura-de-tela-2024-08-26-211542.png)](https://postimg.cc/dZcJTx7m)
 
 ### 4. Sistema de Ar Condicionado
 
@@ -165,6 +196,10 @@ Descrevemos um circuito que simula o funcionamento de um sistema de ar condicion
 | 1  | 1  | 1  | 0  |  1  |
 | 1  | 1  | 1  | 1  |  1  |
 
+### Wave
+
+[![Captura-de-tela-2024-08-26-211602.png](https://i.postimg.cc/SNnYv9Ks/Captura-de-tela-2024-08-26-211602.png)](https://postimg.cc/qzd7tzyV)
+
 
 ### 5. Cálculo Lógico de |2𝐵 - 5|
 
@@ -192,16 +227,22 @@ Implementamos um circuito combinacional que calcula o valor absoluto de 2𝐵 �
 | 1  | 1  | 0  | 0  | 1  | 1  | 1  |
 | 1  | 1  | 1  | 1  | 0  | 0  | 1  |
 
+### Wave
 
-### Estrutura de Pastas
-├── questao1
-│   ├── a.sv
-│   ├── b.do
-│   └── ...
-├── questao2
-│   ├── a.sv
-│   ├── b.do
-│   └── ...
-├── README.md
-│ 
-└── LICENSE
+[![Captura-de-tela-2024-08-26-211616.png](https://i.postimg.cc/zGftM0gh/Captura-de-tela-2024-08-26-211616.png)](https://postimg.cc/PPBQvbKf)
+
+
+## Estrutura do Projeto
+
+A estrutura do projeto está organizada da seguinte forma:
+
+*  **questao1:**
+    *  a.sv
+    *  b.do
+    * ...
+*  **questao2:**
+    *  a.sv
+    *  b.do
+    * ...
+*  **README.md**
+*  **LICENSE**
